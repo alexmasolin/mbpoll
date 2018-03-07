@@ -892,7 +892,7 @@ vPrintReadValues (int iAddr, int iCount, xMbPollContext * ctx) {
   int i;
   for (i = 0; i < iCount; i++) {
 
-    printf ("[0x%04x]: \t", iAddr);
+    printf ("[0x%04X]: \t", iAddr);
 
     switch (ctx->eFormat) {
 
@@ -1043,7 +1043,7 @@ vPrintConfig (const xMbPollContext * ctx) {
   printf ("Protocol configuration: Modbus %s\n", sModeList[ctx->eMode]);
   printf ("Slave configuration...: address = ");
   vPrintIntList (ctx->piSlaveAddr, ctx->iSlaveCount);
-  printf ("\n                        start reference = 0x%04x, count = %d\n",
+  printf ("\n                        start reference = 0x%04X, count = %d\n",
           ctx->iStartRef, ctx->iCount);
   vPrintCommunicationSetup (ctx);
   printf ("Data type.............: ");
