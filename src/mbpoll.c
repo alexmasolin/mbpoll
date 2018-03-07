@@ -1043,7 +1043,7 @@ vPrintConfig (const xMbPollContext * ctx) {
   printf ("Protocol configuration: Modbus %s\n", sModeList[ctx->eMode]);
   printf ("Slave configuration...: address = ");
   vPrintIntList (ctx->piSlaveAddr, ctx->iSlaveCount);
-  printf ("\n                        start reference = %d, count = %d\n",
+  printf ("\n                        start reference = 0x%04x, count = %d\n",
           ctx->iStartRef, ctx->iCount);
   vPrintCommunicationSetup (ctx);
   printf ("Data type.............: ");
