@@ -892,7 +892,7 @@ vPrintReadValues (int iAddr, int iCount, xMbPollContext * ctx) {
   int i;
   for (i = 0; i < iCount; i++) {
 
-    printf ("[%d]: \t", iAddr);
+    printf ("[0x%04x]: \t", iAddr);
 
     switch (ctx->eFormat) {
 
